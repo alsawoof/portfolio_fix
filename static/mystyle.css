@@ -1,0 +1,125 @@
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kode-mono {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav {
+    background-color: #6EAEF8;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nav a {
+    color: white;
+}
+
+.bg {
+    background: url('/static/backgroundstars.png');
+}
+
+.center {
+    text-align: center;
+}
+
+.comments {
+    color: #e6dae1;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.mysection {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.ccard {
+    margin: 40px auto 15px auto;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.mypad {
+    padding-left: 250px;
+    margin-top: 30px;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 220px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+/* Style the back side */
+.flip-card-back {
+    background-color: #645d61;
+    color: white;
+    transform: rotateY(180deg);
+    line-height: 1.5;
+    padding-top: 50px;
+    padding: 50px 10px 10px 10px;
+    text-align: left;
+}
+
+.flip-card-back h1 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.titlesub {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titlesublt {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

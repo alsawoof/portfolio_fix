@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:title" content="Portfolio Alifia Salwa S" />
+        <meta property="og:description" content="Website portfolio terkait project-project yang telah dikerjakan." />
+            
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <!--cr icon
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        -->
+        <title>Portfolio</title>
+        <!--Font used-->
+        <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Madimi+One&display=swap" rel="stylesheet">
+        <link href="{{ url_for('static', filename='mystyle.css') }}" rel="stylesheet"/>
+
+        <!-- Bulma CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
+
+    </head>
+    <body>
+        <nav>
+            <nav class="nav fixed-top justify-content-center">
+                <!--<a class="nav-link" href="#"><img src="images/user.png" width="auto" height="30px" alt="user"></a>-->
+                <a class="nav-link madimi-one-regular" href="#home">Portfolio</a>
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Project</a>
+            </nav>
+        </nav>        
+        
+        <section class="section is-large bg" id="home">
+            <h1 class="title kode-mono" style="margin-left: 30px; text-align: center;">Alifia Salwa Salsabila</h1>
+            <h2 class="subtitle" style="margin-left: 30px; text-align: center;">
+              Universitas Dian Nuswantoro, <strong>2021-now</strong>
+            </h2>
+        </section>
+
+        <section id="about">
+        </section>
+            <div class="row mypad">
+                <div class="col-md-7 order-md-2">
+                    <br>
+                    <h3 class="title" style="margin-top: 20px;">About Me:</h3>
+                    Merupakan mahasiswa Teknik Informartika tahun ketiga yang
+                    memiliki minat tinggi untuk menambah pengalaman pada bidang
+                    Web Development, Mobile Development, dan Data Mining.
+                    <hr>
+                </div>
+                <div class="col-md-3 order-md-1">
+                    <img class="featurette-image mx-auto" src="{{ url_for('static', filename='self.jpg') }}" alt="About" height="300px" style="max-width: 100%; height: auto;">
+                </div> 
+            </div>
+        
+
+        <section id="projects">
+        </section>
+            <div class="ccard">
+                <h1 class="title center">Project</h1>
+                    <h2 class="titlesub">Website Development</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="flip-card">
+                                <a href="https://github.com/alsawoof/relling.github.io">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="{{ url_for('static', filename='portopweb.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Relling (Website Review Buku)</h1>
+                                        <p>Relling merupakan contoh desain frontend website review buku untuk penilaian
+                                            tugas UAS Pemrograman Web.</p>
+                                        <p class="comments">Semester 1; CSS, HTML</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="flip-card">
+                                <a href="https://review-film-lx63.glitch.me/">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="{{ url_for('static', filename='web_review.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Review Film Website</h1>
+                                        <p>Project sederhana dimana pengguna dapat menambahkan film 
+                                            favoritnya pada website ini. 
+                                        </p>
+                                        <p class="comments">Semester 6; Python, Flask, CSS, Javascript, HTML</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="flip-card">
+                                <a href="https://wishlist-website-hw.glitch.me/">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="{{ url_for('static', filename='web_bucket.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Bucketlist Website</h1>
+                                        <p>Project sederhana dimana pengguna dapat menambahkan to-do list maupun wish-list
+                                            dan menghapusnya ketika sudah tidak diperlukan.
+                                        </p>
+                                        <p class="comments">Semester 6; Python, Flask, CSS, Javascript, HTML</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="flip-card">
+                                <a href="https://chap9-wordlist.glitch.me/">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="{{ url_for('static', filename='personalWordlist.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Personal Wordlist Website</h1>
+                                        <p>Dengan bantuan Dictionary API, website ini dapat mencari, menampilkan 
+                                            menambahkan, dan menghapus arti sebuah kata dalam bahasa inggris.
+                                        </p>
+                                        <p class="comments">Semester 6; Python, Flask, CSS, Javascript, HTML</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="flip-card">
+                                <a href="https://chapter10-sweeter.glitch.me/">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="{{ url_for('static', filename='sweeter.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Sweeter Website</h1>
+                                        <p>Website ini terinspirasi dari bagaimana twitter bekerja. Pengguna dapat 
+                                            mengunggah pesan, mengedit profil, hingga personalisasi akun pada website ini.
+                                        </p>
+                                        <p class="comments">Semester 6; Python, Flask, CSS, Javascript, HTML</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <h2 class="titlesub">Others</h2>
+                    <div class="row row-cols-1 row-cols-md-3 g-3">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="flip-card">
+                                    <a href="https://github.com/alsawoof/PPB-mobile/tree/main/TugasMenuMakanan">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="{{ url_for('static', filename='portoppb.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h1>Android Development</h1>
+                                            <p>Aplikasi menu makanan berbasis android yang dikerjakan sebagai tugas UAS
+                                                Pemrograman Perangkat Bergerak.</p>
+                                            <p class="comments">Semester 3; Java</p>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="flip-card">
+                                    <a href="https://github.com/alsawoof/DataMining/blob/main/TugasAkhirMakul/TA.ipynb">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="{{ url_for('static', filename='portodatmin.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h1>Prediksi dengan kNN</h1>
+                                            <p>Melakukan prediksi gangguan tidur berdasarkan dataset yang ada menggunakan 
+                                                algoritma kNN.</p>
+                                            <p class="comments">Semester 4; Python</p>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="flip-card">
+                                    <a href="https://github.com/alsawoof/Kriptografi/tree/main/StreamCipher">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="{{ url_for('static', filename='portokripto.png') }}" alt="PortoAndroid" style="width: 400px;">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h1>Kriptografi Cipher</h1>
+                                            <p>Mengubah plaintext ke ciphertext dan sebaliknya menggunakan metode Stream Cipher.</p>
+                                            <p class="comments">Semester 5; Python</p>
+                                        </div>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="titlesublt">Other projects can be seen on github: &nbsp;
+                        <a href="https://github.com/alsawoof/"><img src="{{ url_for('static', filename='github.svg') }}" width="22px" height="22px"></a>
+                    </h3>
+                </div>
+            </div>
+        
+            
+            <!--
+            <h1 class="title center">Project</h1>
+            <div class="flip-card">
+                <a href="https://github.com/alsawoof/PPB-mobile/tree/main/TugasMenuMakanan">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="{{ url_for('static', filename='portoppb.png') }}" alt="PortoAndroid" style="width: 400px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Android Development</h1>
+                        <p>Aplikasi menu makanan berbasis android yang dikerjakan sebagai tugas UAS
+                            Pemrograman Perangkat Bergerak.</p>
+                        <p class="comments">Semester 3; Java</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+            -->
+        
+        <footer style="text-align: center">
+            Contacts:
+            <br>
+            <a href="mailto:als.salsa27@gmail.com"><img src="{{ url_for('static', filename='envelope-solid.svg') }}" width="25px" height="25px"></a>
+            &nbsp;
+            <a href="https://github.com/alsawoof/"><img src="{{ url_for('static', filename='github.svg') }}" width="25px" height="25px"></a>
+            <br>
+            Copyright &copy; Alifia Salwa Salsabila
+        </footer>
+
+
+        
+    </body>
+</html>
